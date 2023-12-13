@@ -1,0 +1,54 @@
+section#portfolio{
+
+  height: 600px;
+}
+section#portfolio .wrap{
+
+}
+section#portfolio .wrap h2{
+
+}
+section#portfolio .wrap p{
+
+  text-align: center;
+  margin-right: 20px;
+}
+section#portfolio .wrap>ul{
+
+  margin-top: 30px;
+  background-color: #ebcbd0;
+  border-radius: 20px;
+  padding-top: 90px;
+  padding-bottom: 82px;
+}
+section#portfolio .wrap ul li{
+
+  width: 100%;
+  padding: 10px 20px;
+}
+section#portfolio .wrap ul li img{
+
+  width: 285px;
+  height: 200px;
+}
+section#portfolio .wrap ul li div{
+
+}
+section#portfolio .wrap ul li div h3{
+
+}
+section#portfolio .wrap ul li div p{
+
+}
+section#portfolio .wrap ul li div ul{
+
+}
+section#portfolio .wrap ul li div ul li{
+
+}
+section#portfolio .wrap ul li div span{
+
+}
+section#portfolio .wrap ul li div span button{
+
+}
