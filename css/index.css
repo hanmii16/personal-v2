@@ -1,0 +1,105 @@
+/* 상단영역*/
+header{
+     /* 너비지정   */
+     /* 중앙정렬 */
+    height: 60px;
+    position: absolute;
+    width: 100%;
+
+}
+ header .wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+ }
+header h1{    
+  position: relative;
+  }
+header h1 a{
+   color: #fff; 
+   font-size: 30px;
+   letter-spacing: -2px;
+   font-weight: bold; 
+
+ }
+header h1 a::after{
+  
+  content: "";
+  width: 265px;
+  height: 0px;
+  display: block;
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  transform: translateX(295px);
+  top: 16px;
+}
+header ul{
+     
+  display: flex;
+  gap: 20px;
+  }
+header ul li{   
+  margin-left: 10px;
+  }
+header ul li a:hover{
+  color: pink;
+}
+header ul li a{
+     color: #fff;
+     padding: 10px 20px;
+     font-size: 18px;
+  }
+  /*자식선택자 : 바로아래있는 선택자(태그)*/
+header div.wrap>a{
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  background-image:url(../img/menu.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+div#title{
+  background-color: beige;
+  background-image: url(../img/cover2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ div#title div.wrap{ /*하위선택자 */
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+ }
+div#title div.wrap h2{
+  color: #fff;  
+  text-shadow: 1px 1px 40px rgba(251, 27, 27, 0.5);
+}
+div#title div.wrap h2 span::before{
+  content: "";
+  
+  width: 660px;
+  height: 185px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  background-color: transparent;
+  transform: rotate(-5deg);
+  transform-origin: bottom left;
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.3);
+}
+div#title div.wrap h2 span {
+  
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+}
+div#title div.wrap p {
+
+  font-size: 20px;
+  color: #fff;
+  margin-top: 60px;
+  font-weight: bold;
+}
