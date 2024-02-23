@@ -1,0 +1,28 @@
+aside{
+  position: fixed;
+  top: calc(50% - 43px);
+  right: 18px;
+}
+aside ul{
+
+}
+aside ul li{
+  margin-bottom: 10px;
+}
+aside ul li:not(:last-child){
+  margin-bottom: 10px
+}
+aside ul li a {
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  display: block;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.currentB{
+  background-color: #d1a5c6;
+}
+.currentW{
+  background-color: black; 
+}

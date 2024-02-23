@@ -1,0 +1,79 @@
+/* 상단영역*/
+header{
+     /* 너비지정   */
+     /* 중앙정렬 */
+    height: 60px;
+    position: absolute;
+    width: 100%;
+
+    position: fixed;
+    z-index: 1;
+}
+ header .wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+ }
+header h1{    
+  }
+header h1 a{
+   color: #333; 
+   font-size: 30px;
+   letter-spacing: 1px;
+   font-weight: bold; 
+
+ }
+header ul{
+     
+  display: flex;
+  gap: 20px;
+  }
+header ul li{   
+  margin-left: 10px;
+  }
+header ul li a:hover{
+  color: pink;
+}
+header ul li a{
+     color: #333;
+     padding: 10px 20px;
+     font-size: 18px;
+  }
+  /*자식선택자 : 바로아래있는 선택자(태그)*/
+header div.wrap>a{
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  background-image:url(../img/menu.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+div#title{
+}
+ div#title div.wrap{ /*하위선택자 */
+  position: relative;
+  align-items: center;
+}
+#title .wrap h2{
+  
+  position: absolute;
+  font-size: 127px;
+  font-weight: 700;
+  top: 76px;
+  color: #1a1919;
+  line-height: 1.2;
+  /*! font-family: 'Chalkboard', cursive; */
+  left: 0;
+}
+#title .wrap figure{
+  
+}
+#title .wrap figure img{
+  width: 2048px;
+  height: 1500px;
+}
+.wrap p{
+  line-height: 1.5;
+}

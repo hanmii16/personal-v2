@@ -1,0 +1,109 @@
+section#about{
+   padding: 100px 70px;
+   position: relative;
+}
+section#about h3{
+
+   text-align: right;
+   color: #333;
+}
+section#about article{
+  position: relative;
+  padding-left: calc(50% - -20px);
+  padding-top: 170px;
+  padding-bottom: 40px;
+  background-color: #f8f8f8;
+  height: 450px;
+  margin-left: 145px;
+}
+section#about article div {
+   
+}
+section#about article div img {
+   
+   width: 498PX;
+   height: 759PX;
+   position: absolute;
+   left: 50px;
+   top: -100px;
+}
+section#about article div small{
+   
+   font-size: 20px;
+   color: #c9ab81;
+}
+section#about article div h4{
+   
+   margin-top: 20px;
+}
+section#about article div ul{
+
+}
+section#about article div ul li{
+   
+   line-height: 1.5;
+}
+section#about article div p{
+   font-size: 18px;
+   margin-top: 20px;
+   line-height: 1.5;
+   white-space: pre-line;
+}
+section#about article div ul.list{
+
+   margin-top: 50px;
+}
+section#about article div ul.list li{
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+section#about article div ul.list li:nth-child(1)::before{
+   content: "";
+   display: block;
+   background-image: url(../img/html_1.png);
+   width: 48px;
+   height: 48px;
+   background-size: cover;
+}
+section#about article div ul.list li:nth-child(2)::before{
+    content: "";
+   display: block;
+   background-image: url(../img/css_1.png);
+   width: 48px;
+   height: 48px;
+   background-size: cover;
+}
+section#about article div ul.list li:nth-child(3)::before{
+   content: "";
+   display: block;
+   background-image: url(../img/java.png);
+   width: 48px;
+   height: 48px;
+   background-size: cover;
+}
+section#about article div ul.list li:nth-child(4)::before{
+   content: "";
+   display: block;
+   background-image: url(../img/github.png);
+   width: 48px;
+   height: 48px;
+   background-size: cover;
+}
+section#about article div ul.list li:nth-child(5)::before{
+   content: "";
+   display: block;
+   background-image: url(../img/photoshop.png);
+   width: 48px;
+   height: 48px;
+   background-size: cover;
+}
+section#about article div ul.list li:nth-child(6)::before{
+   content: "";
+   display: block;
+   background-image: url(../img/adobeillust.png);
+   width: 48px;
+   height: 48px;
+   background-size: cover;
+}

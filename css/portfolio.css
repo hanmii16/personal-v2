@@ -1,0 +1,55 @@
+#portfolio{
+  
+}
+#portfolio .wrap{
+  
+}
+#portfolio .wrap small{
+  
+}
+#portfolio .wrap h3{
+  
+}
+#portfolio .wrap p{
+  
+  text-align: center;
+  margin-top: 30px;
+  color: #c9ab81;
+}
+#portfolio article{
+  
+  margin-top: 30px;
+}
+#portfolio article .slide{
+  
+  padding: 30px 60px;
+}
+#portfolio article .slide span{
+  
+}
+#portfolio article .flex{
+  
+  max-width: 100%;
+}
+#portfolio article .flex ul{
+  
+  max-width: 100%;
+}
+#portfolio article .flex ul li{
+  
+  
+  margin: 0 20px;
+}
+#portfolio article .flex ul li img{
+  
+  width: 100%;
+}
+#portfolio article .flex ul li small{
+  
+  display: block;
+  font-size: 20px;
+  color: #131313;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  margin-top: 30px;
+}

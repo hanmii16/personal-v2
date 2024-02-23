@@ -1,0 +1,60 @@
+section#contact {
+
+}
+section#contact .wrap {
+
+}
+section#contact .wrap h2 {
+
+  color: #fbdfdf;
+  margin-top: 60px;
+  text-align: center;
+}
+section#contact .flex  {
+
+}
+section#contact .flex ul  {
+
+  transform: translateX(calc(50% - 270px));
+}
+
+section#contact .flex ul li::before{
+  content: "";
+  display: block;
+  height: 40px;
+  width: 1000px;
+  /*! border-radius: 12%; */
+  background-color: #ed9599;
+  margin-top: 10px;
+  padding-top: 15px;
+  transform: translateY(50px);
+  border: 0px solid #302d2d;
+  position: relative;
+  z-index: -1;
+}
+section#contact .flex ul li  {
+  line-height: 3;
+  text-align: center;
+}
+section#contact .flex ul li:nth-child(1)::before{
+  
+  background-image: url(../img/phone.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 2%;
+}
+section#contact .flex ul li:nth-child(2)::before{
+  background-image: url(../img/mail.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 2%;
+}
+section#contact .flex ul li:nth-child(3)::before{
+  background-image: url(../img/home.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 2%;
+}
+section#contact .flex ul li p{
+  
+}
