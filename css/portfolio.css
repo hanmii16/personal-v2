@@ -19,21 +19,24 @@
 #portfolio article{
   
   margin-top: 30px;
+  margin-left: 85px;
+  margin-right: 85px;
+  padding: 50px 50px;
 }
 #portfolio article .slide{
   
-  padding: 30px 60px;
+  /*! padding: 30px 60px; */
 }
 #portfolio article .slide span{
   
 }
 #portfolio article .flex{
   
-  max-width: 100%;
+  width: 100%;
 }
 #portfolio article .flex ul{
   
-  max-width: 100%;
+  width: 100%;
 }
 #portfolio article .flex ul li{
   
