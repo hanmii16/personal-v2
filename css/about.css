@@ -1,63 +1,52 @@
 section#about{
-   padding: 100px 70px;
-   position: relative;
-}
-section#about h3{
-
-   text-align: right;
-   color: #333;
-}
-section#about article{
-  position: relative;
-  padding-left: calc(50% - -20px);
-  padding-top: 170px;
-  padding-bottom: 40px;
-  background-color: #f8f8f8;
-  height: 450px;
-  margin-left: 145px;
-}
-section#about article div {
-   
-}
-section#about article div img {
-   
-   width: 498PX;
-   height: 759PX;
-   position: absolute;
-   left: 50px;
-   top: -100px;
-}
-section#about article div small{
-   
-   font-size: 20px;
-   color: #c9ab81;
-}
-section#about article div h4{
-   
-   margin-top: 20px;
-}
-section#about article div ul{
-
-}
-section#about article div ul li{
-   
-   line-height: 1.5;
-}
-section#about article div p{
-   font-size: 18px;
-   margin-top: 20px;
-   line-height: 1.5;
-   white-space: pre-line;
-}
-section#about article div ul.list{
-
-   margin-top: 50px;
-}
-section#about article div ul.list li{
+   padding-left: 50px;
+   padding-right: 50px;
+}section#about .wrap{
    
    display: flex;
-   flex-direction: column;
-   align-items: center;
+}
+section#about .wrap h3{
+   transition: 1s;
+   writing-mode: vertical-rl;
+   transform: rotate(180deg);
+}
+section#about .wrap .infor {
+   width: 50%;
+   padding-left: 85px;
+}
+section#about .wrap .infor ul{
+   
+}
+section#about .wrap .infor ul li{
+   
+   line-height: 4;
+   white-space: pre-line;
+   letter-spacing: 2px;
+}
+section#about .educate{
+  
+   width: 50%;
+   padding-right: 85px;
+}
+section#about small{
+   font-size: 20px;
+   color: #888282;
+}
+section#about .educate ul{
+
+   margin-top: 15px;
+}
+section#about .educate ul li{
+   line-height: 5;
+   border-top: 1px solid #ccc;
+}
+section#about .educate ul li:nth-child(3){
+   
+   border-bottom: 1px solid #ccc;
+}
+section#about .educate ul li span{
+   
+   margin: 0 43px;
 }
 section#about article div ul.list li:nth-child(1)::before{
    content: "";
@@ -66,6 +55,7 @@ section#about article div ul.list li:nth-child(1)::before{
    width: 48px;
    height: 48px;
    background-size: cover;
+   background-position: left center;
 }
 section#about article div ul.list li:nth-child(2)::before{
     content: "";
@@ -106,4 +96,8 @@ section#about article div ul.list li:nth-child(6)::before{
    width: 48px;
    height: 48px;
    background-size: cover;
+}
+.slidingM{
+   transform: translateX(-10px);
+   opacity: 1;
 }

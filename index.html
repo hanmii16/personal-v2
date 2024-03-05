@@ -18,16 +18,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- 구글폰트// -->
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/skill.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="library/typed/typed.min.js"></script>
+    
+    
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" type="text/javascript"></script>
      <!-- slick -->
      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -35,28 +37,94 @@
      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
      <script type="text/javascript">
         $(document).ready(function(){
-            $(".portSlide").slick({
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                autoplay: true,
-                autoplaySpeed: 4000,
-                infinite: true,
-                centerMode: true,
-                centerPadding: '60px'
+            //MENU
+                $("header ul").addClass("slide");
               
+             // PORTFOLIO IMAGE CLICK
+             $("#portfolio .wrap ul li").click(function(){
+                $(this).toggleClass("clicked");
+             });   
+            //SCROLL
+            var menuH=$("header ul").offset().top;
+            var aboutH=$("#about").offset().top;
+            var portfolioH=$("#portfolio").offset().top;
+            var contactH=$("#contact").offset().top;
+            $(window).scroll(function(){
+                
+                //aboutslide
+                if($(window).scrollTop()>aboutH){
+                   $("header ul li:nth-child(1) a").addClass("current");
+                   $("header ul li").not("li:nth-child(1)").children("a").removeClass("current");
+                  }
+                if($(window).scrollTop()<aboutH){
+                    $("header ul li:nth-child(1) a").removeClass("current");
+                  }
+                // portfolio
+                if($(window).scrollTop()>portfolioH){
+                    $("header ul li:nth-child(2) a").addClass("current");
+                    $("header ul li").not("li:nth-child(2)").children("a").removeClass("current");
+                }
+                if($(window).scrollTop()<portfolioH){
+                    $("header ul li:nth-child(2) a").removeClass("current");
+                }
+                //contact
+                if($(window).scrollTop()>contactH){
+                    $("header ul li:nth-child(3) a").addClass("current");
+                    $("header ul li").not("li:nth-child(3)").children("a").removeClass("current");
+                }
+                if($(window).scrollTop()<contactH){
+                    $("header ul li:nth-child(3) a").removeClass("current");
+                }
             });
+            //메뉴 클릭하면 슬라딩 (CLICK)
+            var y;
+            $("header ul li a").click(function(){
+                y=$(this).parent().index()+1;
+                if(y==1){
+                    $("html,body").animate({scrollTop:aboutH},1000);
+                    return false;
+                }
+                if(y==2){
+                    $("html,body").animate({scrollTop:portfolioH},1000);
+                    return false;
+                }
+                if(y==3){
+                    $("html,body").animate({scrollTop:contactH},1000);
+                    return false;
+                }
+            });
+            // TYPE TEXT
+            var typed_strings = "Web Designer, Web Publisher";
+            var typed = new Typed('#typing-effect', {
+                strings: typed_strings.split(', '),
+                typeSpeed: 200,
+                backSpeed: 50,
+                smartBackspace: true,
+                cursorChar: '|',
+                loop: true
+            });
+            
         });
      </script>
+     <!--AOS-->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+     <script>
+        $(document).ready(function(){
+            AOS.init();
+        });
+      </script>
 </head>
 <body>
     <!--상단영역-->
     <header>
         <div class="wrap">
-        <h1><a href="#">hanmi's portfolio</a></h1>
+        <h1><a href="#">welcome to my house:)</a></h1>
         <ul>
-            <li><a href="#" >about</a></li>
-            <li><a href="#" class="sasun">portofolio</a></li>
-            <li><a href="#" class="sasun">contact</a></li>
+            <li><a href= >about</a></li>
+            <li><a href="">skill</a></li>
+            <li><a href="">portofolio</a></li>
+            <li><a href="">contact</a></li> 
         </ul>
         <a href="#">메뉴보기</a>
         </div>
@@ -64,114 +132,191 @@
     <!--타이틀 영역-->
     <div id="title">
         <div class="wrap flex column align-center center">
-                <h2 class="h1">MIYOON'S<br>PORTFOLIO</h2>
-                <figure>
-                    <img src="img/may.jpeg" alt="">
-                </figure>
+            <div class="left">
+                <h2 class="h1">Hi
+                    <br>
+                    <strong>I'm Hanmi</strong></h2>
+                    <span id="typing-effect" class="typed-text-output"></span> 
+                    <p>안녕하세요! 베트남에서 온 
+                        웹퍼블리셔 응우엔당빅하인입니다.
+                        이젠아카데미에서 5개월동안 UI/UX 
+                        반응형 동영상 수업을 배웠습니다.
+                        새로운 디자인 여정을 시작하고, 
+                        함께 작은 순간에서 큰 행복을 찾아보고자 합니다.
+                        감사합니다
+                     </p> 
+            </div>
+            <div class="right">
+                <img src="img/IMG_5587.PNG" alt="">
+            </div>
         </div>
-    </div>
-    <!--text-->
-    <div class="wrap flex column align-center center">
-        <p class="h5">웹 퍼블리셔는 아이디어의 정원이며, 각 단어, 각 이미지가 보살핌과 장식을 받아 흥미로운 그리고
-        <br>
-        매력적인 온라인 정원을 만들어내는 곳입니다."
-        </p>
     </div>
     <!--메인영역-->
     <main>
-        <section id="about">
-            <h3 class="h3">ABOUT ME</h4>
-            <article>
-            <div>
-                <img src="img/hinh2.jpg" alt="ABOUT BAEXANG">
-            </div>
-        <div>
-                <small class="small">MY . INFORMATION</small>
-                <h4 class="h4">NGUYEN DANG BICH HANH</h3>
+        <section id="about" class="paddingT50 paddingB50">
+            <div class="wrap">
+                <h3 class="h3">About</h3> 
+            <div class="infor">
+                <small class="small">MY . INFOR</small>
                 <ul>
-                    <li>1997.01.16</li>
-                    <li>2015~2019 다낭경제대학교 회계전공 졸업</li>
+                    <li><strong>NAME</strong>
+                        NGUYEN DANG BICH HANH</li>
+                    <li><strong>BIRTHDAY</strong>
+                        1997.01.16</li>
+                    <li><strong>ADDRESS</strong>
+                        Seongnamsi</li>
+                    <li><strong>HOBBY</strong>
+                        DRAWING,TRAVEL</li>
                 </ul>
-                <p>안녕하세요! 베트남에서 온 웹퍼블리셔 응우엔당빅하인입니다.
-                   이젠아카데미에서 5개월동안 UI/UX 반응형 동영상 수업을 배웠습니다.
-                   새로운 디자인 여정을 시작하고, 함께 작은 순간에서 큰 행복을 찾아보고자 합니다.
-                   감사합니다
-                </p>
-        </div>
-        <div >
-            <ul class="list flex between">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
-                <li>Github</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-            </ul>
-        </div>
-            </article>
+            </div>
+            <div class="educate">
+                <small class="small">MY . EDUCATION</small>
+                <ul>
+                    <li>2015~2019
+                         <span>다낭경제대학교 회계전공 졸업</span>
+                    </li>
+                    <li>2022~2023 
+                        <span>한국어능력시험 TOPIK 5급</span>
+                    </li>
+                    <li>2023~2024 
+                        <span>디지털디자인]UI/UX 웹디자인with 유튜브동영상 반응형 웹</span>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <section id="skill"class="paddingT50 paddingB50">
+            <div class="wrap">
+                <h3 class="h3">Skill</h3>
+               
+                <div class="skill-show">
+                    <div class="skill">
+                        <h4>HTML5</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level html">HTML</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>CSS3</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level css">CSS</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Javascript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level javascript">JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                            <h4>Github</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level github">Github</div>
+                            </div>
+                    </div>
+                    <div class="skill">
+                            <h4>Adobe hotoshop</h4>
+                            <div class="skill-bar">
+                                <div class="skill-level photoshop">Adobe Photoshop</div>
+                            </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Adobe Illustrator</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level illust">Adobe Illustrator</div>
+                        </div>
+                 </div>
+            </div>               
         </section>
         <section id="portfolio" class="paddingT50 paddingB50">
             <div class="wrap">
-                  <h3 class="h3">PORTFOLIO</h3>
-                  <p class="p">총 9개 작업물이 있습니다</p>
-                </div>
-              <article class="flex">
-               <div class="flex">
-                      <ul class="portSlide">
-                          <li>
-                            <img src="img/work1.png" alt="" width="447px" height="298px">
-                            <small class="small">ACCUNIQ</small>
-                          </li>
-                          <li>
-                            <img src="img/work2.png" alt="" width="447px" height="298px">
-                             <small class="small">L.Point</small>
-                            </li>
-                          <li>
-                            <img src="img/work3.png" alt="" width="447px" height="298px">
-                            <small class="small">HB Paper</small>
-                         </li>
-                        <li>
-                            <img src="img/work4.PNG" alt="" width="447px" height="298px">
-                            <small class="small">Hitenjinro</small>
-                        <li>
-                            <img src="img/work5.PNG" alt="" width="447px" height="298px">
-                            <small class="small">My portfolio</small>
-                        </li>
-                        <li>
-                            <img src="img/work6.PNG" alt="" width="447px" height="298px">
-                             <small class="small">The Hue</small>
-                        </li>
-                        <li>
-                            <img src="img/work7.PNG" alt="" width="447px" height="298px">
-                            <small class="small">Sanrio</small>
-                        </li>        
-                        <li>
-                            <img src="img/work8.png" alt="" width="447px" height="298px">
-                            <small class="small">Baexang gallery</small>
-                        </li>
-                    </ul>
-              </div>
-            </article>
-        </section>
-        <section id="contact" class="paddingT50 paddingB50">
-            <div class="wrap">
-                <h3 class="h3">contact me</h2>
-                <div class="flex"><ul>
-                <li>010-5126-1665</li>
-                <li>NGUYENDANGBICHHANH@gmail.com</li>
-                <li>경기도 성남시 중원구 금광로 72</li></div>
+                <h3 class="h3">Portfolio</h3>
+                <ul class="portfolio">   
+                    <li>
+                        
+                        <h4 class="h4">ACCUNIQ</h4>
+                        <h5 class="h5">작업진도: 100%</h5>
+                        <h6 class="h6">사용도구: html,css,jquery</h6>
+                        <a href="file:///D:/hanmi/pf1-accuniq/index.html">View more</a>
+                        <div class="portfolio-image"></div>
+                    </li>
+                    <li>
+                       
+                        <h4 class="h4">L.POINT</h4>
+                        <h5 class="h5">작업진도: 100%</h5>
+                        <h6 class="h6">사용도구: html,css,jquery</h6>
+                        <a href="file:///D:/hanmi/pf2-lpoint/index.html">View more</a>
+                        <div class="portfolio-image"></div>
+                    </li>
+                    <li>
+                        
+                        <h4 class="h4">HB PAPER</h4>
+                        <h5 class="h5">작업진도: 100%</h5>
+                        <h6 class="h6">사용도구: html,css,jquery</h6>
+                        <a href="file:///D:/hanmi/pf3-hbpaper/index.html">View more</a>
+                        <div class="portfolio-image"></div>
+                    </li>
+                    <li>
+                        
+                        <h4 class="h4">HITENJINRO</h4>
+                        <h5 class="h5">작업진도: 100%</h5>
+                        <h6 class="h6">사용도구: html,css,jquery</h6>
+                        <a href="file:///D:/hanmi/pf4-Hitejinro/index.html">View more</a>
+                        <div class="portfolio-image"></div>
+                    </li>
+                    <li>
+                        
+                        <h4 class="h4">THE HUE</h4>
+                        <h5 class="h5">작업진도: 100%</h5>
+                        <h6 class="h6">사용도구: html,css,jquery</h6>
+                        <a href="file:///D:/hanmi/thehue/index.html">View more</a>
+                        <div class="portfolio-image"></div>
+                    </li>
+                    <li>
+                        
+                        <h4 class="h4">SANRIO</h4>
+                        <h5 class="h5">작업진도: 100%</h5>
+                        <h6 class="h6">사용도구: html,css,jquery</h6>
+                        <a href="file:///D:/hanmi/sanrio/index.html">View more</a>
+                        <div class="portfolio-image"></div>
+                    </li>
+                    <li>
+                        
+                        <h4 class="h4">BAEXANG GALLERY</h4>
+                        <h5 class="h5">작업진도: 100%</h5>
+                        <h6 class="h6">사용도구: html,css,jquery</h6>
+                        <a href="file:///D:/hanmi/baexang%20gallery/index.html">View more</a>
+                        <div class="portfolio-image"></div>
+                    </li>
                 </ul>
             </div>
         </section>
+        <section id="contact" class="paddingT50 paddingB50">
+            <div class="wrap">
+                <div class="contact-info">
+                    <img src="img/hinh1.jpg" alt="Contact Image">
+                </div>
+                <div class="contact-form">
+                    <h3 class="h3">contact me</h3>
+                        <ul>
+                            <li>010-5126-1665</li>
+                            <li>nguyendangbichhanh@gmail.com</li>
+                            <li>instagram:</li>
+                        </ul>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+            </div>
+        </section>
     </main>
-    <aside>
-        <ul>
-            <li><a href=""class="currentB">about</a></li>
-            <li><a href="">skill</a></li>
-            <li><a href="">portofolio</a></li>
-            <li><a href="">contact</a></li>
-        </ul>
-    </aside>
     <!--하단영역-->
     <footer>
         <div class="wrap flex between paddingT50 marginT50">

@@ -1,0 +1,166 @@
+#skill{
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+#skill .wrap{
+  display: flex;
+}
+#skill .wrap h3{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+#skill .wrap small{
+  font-size: 20px;
+  color: #888282;
+}
+.skill{
+
+}
+.skill h4{
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  display: none;
+}
+.skill-show{
+  
+  width: 60%;
+  padding: 50px 80px;
+}
+.skill-bar{
+  background-color: #ddd;
+  height: 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+.skill-level{
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+  letter-spacing: 2px;
+}
+.skill-level.html{
+  background-color: #9297c8;
+  width: 80%;
+  border-radius: 20px;
+  height: 35px;
+  animation: fillWidthHtml 2s ease-out forwards; 
+}
+@keyframes fillWidthHtml {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 80%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.html::before{
+  content: "80%";
+  position: absolute;
+  left: -35px;
+}
+.skill-level.css{
+  background-color: #ee7036;
+  width: 80%;
+  border-radius: 20px;
+  height: 35px;
+  animation:  fillWidthCss 2s ease-out forwards; 
+}
+@keyframes fillWidthCss {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 80%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.css::before{
+  content: "80%";
+  position: absolute;
+  left: -35px;
+}
+.skill-level.javascript{
+  background-color: #f7cb9a;
+  width: 60%;
+  border-radius: 20px;
+  height: 35px;
+  animation:  fillWidthJava 2s ease-out forwards; 
+}
+@keyframes fillWidthJava {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 60%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.javascript::before{
+  content: "60%";
+  position: absolute;
+  left: -35px;
+}
+.skill-level.github{
+  background-color: #f6c1a7;
+  width: 70%;
+  border-radius: 20px;
+  height: 35px;
+  animation:  fillWidthGit 2s ease-out forwards; 
+}
+@keyframes fillWidthGit {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 70%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.github::before{
+  content: "70%";
+  position: absolute;
+  left: -35px;
+}
+.skill-level.photoshop{
+  background-color: #b6c796;
+  width: 60%;
+  border-radius: 20px;
+  height: 35px;
+  animation:  fillWidthPTS 2s ease-out forwards; 
+}
+@keyframes fillWidthPTS {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 60%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.photoshop::before{
+  content: "60%";
+  position: absolute;
+  left: -35px;
+}
+.skill-level.illust{
+  background-color: #bd9e84;
+  width: 50%;
+  border-radius: 20px;
+  height: 35px;
+  animation:  fillWidthIllust 2s ease-out forwards; 
+}
+@keyframes fillWidthIllust {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 50%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.illust::before{
+  content: "50%";
+  position: absolute;
+  left: -35px;
+}

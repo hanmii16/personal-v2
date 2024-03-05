@@ -3,56 +3,62 @@ section#contact {
 }
 section#contact .wrap {
 
+  display: flex;
+  justify-content: space-around;
 }
-section#contact .wrap h3 {
-  margin-top: 60px;
-  text-align: center;
-}
-section#contact .flex  {
+section#contact .wrap .contact-info {
 
 }
-section#contact .flex ul  {
+section#contact .wrap .contact-info img {
 
-  transform: translateX(calc(50% - 270px));
+  width: 400px;
+  border-radius: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+section#contact .wrap .contact-form {
 
-section#contact .flex ul li::before{
-  content: "";
+}
+section#contact .wrap .contact-form ul {
+
+  margin-bottom: 20px;
+}
+section#contact .wrap .contact-form ul li {
+
+  line-height: 2;
+}
+section#contact .wrap .contact-form h3 {
+
+  margin-bottom: 20px;
+}
+section#contact .wrap .contact-form form{
+  
+}
+.form-group{
+  margin-bottom: 20px;
+}
+label{
+  
   display: block;
-  height: 40px;
-  width: 1000px;
-  /*! border-radius: 12%; */
-  background-color: #fac1ca;
-  margin-top: 10px;
-  padding-top: 15px;
-  transform: translateY(50px);
-  border: 0px solid #302d2d;
-  position: relative;
-  z-index: -1;
+  margin-bottom: 5px;
 }
-section#contact .flex ul li  {
-  line-height: 3;
-  text-align: center;
-}
-section#contact .flex ul li:nth-child(1)::before{
+textarea{
   
-  background-image: url(../img/phone.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: 2%;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #4e4d4d;
+  border-radius: 10px;
 }
-section#contact .flex ul li:nth-child(2)::before{
-  background-image: url(../img/mail.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: 2%;
-}
-section#contact .flex ul li:nth-child(3)::before{
-  background-image: url(../img/home.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: 2%;
-}
-section#contact .flex ul li p{
+button{
   
+  padding: 10px 20px;
+  background-color: #f2b3d3;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input{
+   width: 100%;
+  padding: 10px;
+  border: 1px solid #4e4d4d;
+  border-radius: 10px;
 }

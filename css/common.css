@@ -40,11 +40,11 @@
   }
 }
 .h3{
-   font-size: 120px;
+   font-size: 200px;
+   color: #ffc683;
  }
 .h4{
-   font-size: 65px;
-   font-weight: 400;
+   font-size: 30px;
  }
 .h5{
    font-size: 20px;
@@ -105,4 +105,7 @@ main .h2::before{
 .center{
   text-align: center;
   
+}
+.relative{
+  position: relative;
 }

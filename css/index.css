@@ -1,46 +1,49 @@
+body{
+  
+  background-color: aliceblue;
+}
 /* 상단영역*/
 header{
-     /* 너비지정   */
-     /* 중앙정렬 */
     height: 60px;
-    position: absolute;
-    width: 100%;
-
-    position: fixed;
-    z-index: 1;
 }
  header .wrap{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
  }
 header h1{    
+  text-align: center;
   }
 header h1 a{
-   color: #333; 
-   font-size: 30px;
+   color: #ffc683; 
+   font-size: 15px;
    letter-spacing: 1px;
    font-weight: bold; 
-
  }
-header ul{
-     
-  display: flex;
-  gap: 20px;
-  }
+header h1 a::before{
+  content: "";
+  background-image: url(../img/IMG_8418.png);
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+header ul{     
+}
 header ul li{   
-  margin-left: 10px;
-  }
-header ul li a:hover{
-  color: pink;
 }
 header ul li a{
-     color: #333;
-     padding: 10px 20px;
-     font-size: 18px;
-  }
-  /*자식선택자 : 바로아래있는 선택자(태그)*/
+     font-size: 22px;
+     line-height: 2.5;
+     letter-spacing: 1px;
+     display: block;
+     transition: 0.7s;
+     color: #89613b;
+}
 header div.wrap>a{
   font-size: 0;
   width: 30px;
@@ -49,31 +52,76 @@ header div.wrap>a{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: none;
  }
 div#title{
+  /*! height: 100%; */
+/*   animation-name: titleSlide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  padding: 150px 50px;
 }
- div#title div.wrap{ /*하위선택자 */
-  position: relative;
-  align-items: center;
+@keyframes titleSlide{
+  0%{
+    transform: translateY(0%)
+  }
+  100%{
+    transform: translateY(5%)
+  }
+}
+#title div.wrap{
+  
+}
+#title .wrap .left{
+  
+  width: 50%;
 }
 #title .wrap h2{
-  
-  position: absolute;
-  font-size: 127px;
+  font-size: 135px;
   font-weight: 700;
-  top: 76px;
   color: #1a1919;
   line-height: 1.2;
-  /*! font-family: 'Chalkboard', cursive; */
-  left: 0;
+  font-family: 'Chalkboard', cursive;
 }
-#title .wrap figure{
+#title .wrap h2 strong{
+  color: #ffc683;
+}
+#title .wrap .left p{
   
-}
-#title .wrap figure img{
-  width: 2048px;
-  height: 1500px;
-}
-.wrap p{
   line-height: 1.5;
+}
+#title .wrap .right{
+  
+  width: 50%;
+}
+.typed-text-output{
+  font-size: 30px;
+    color: #333;
+ 
+    margin: 10px;
+    min-height: 50px;
+}
+#title .wrap .right img{
+  
+  width: 400px;
+  height: 500px;
+}
+.slide{
+  position: fixed;
+  right: 80px;
+  top: 30px;
+  z-index: 1;
+}
+.current{
+  color: pink;
+  transform: scale(1.5);
+  transform-origin: 0 50%;
+}
+.current::after{
+  content:"-";
+  display: inline-block;
+  transform: translateX(5px) scale(2);
 }
