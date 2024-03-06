@@ -19,26 +19,10 @@
  }
 .h1{
    font-size: 100px;
-   font-family: 'Kanit', sans-serif;
  }
 .h2{
    font-size: 54px;
-   color: #fff;
-   margin-bottom: 13px;
-   animation-name: abouts;
-   animation-duration: 1s;
-   animation-timing-function: ease-in;
  }
-@keyframes abouts{
-  0%{
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100%{
-    opacity: 0;
-    transform: translateY(-80%);
-  }
-}
 .h3{
    font-size: 200px;
    color: #ffc683;
@@ -88,23 +72,14 @@ main .h2::before{
     transform: translateY(-80%);
   }
 }
-.sasun::before{
-  content: "\2665";
-  margin-right: 12px;
-  position: relative;
-  right: 30px;
-}
-
 /* 블럭,인라인 */
 .block{
   display: block; 
   margin: 23px;
 }
-
 /*정럴*/
 .center{
-  text-align: center;
-  
+  text-align: center;  
 }
 .relative{
   position: relative;

@@ -1,28 +1,64 @@
 aside{
-  position: fixed;
-  top: calc(50% - 43px);
-  right: 18px;
+  
 }
-aside ul{
-
+aside .scroll{
+  
 }
-aside ul li{
-  margin-bottom: 10px;
+aside .scroll span{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
-aside ul li:not(:last-child){
-  margin-bottom: 10px
-}
-aside ul li a {
-  font-size: 0;
-  width: 14px;
-  height: 14px;
+aside .scroll span a{
   display: block;
-  border-radius: 50%;
-  background-color: #ccc;
+  border: 2px solid #2b2726;
+  width: 26px;
+  height: 36px;
+  border-radius: 23px;
+  background-color: #fff;
+  animation-name: updown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
 }
-.currentB{
-  background-color: #d1a5c6;
+@keyframes updown{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+     transform: translateY(-50%);
+  }
 }
-.currentW{
-  background-color: black; 
+aside .scroll span a::before{
+  content: "";
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  border-radius: 70%;
+  background-color: black;
+  border: 1px solid black;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+aside .scroll span p{
+  
 }

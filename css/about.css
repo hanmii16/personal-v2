@@ -1,6 +1,7 @@
 section#about{
    padding-left: 50px;
    padding-right: 50px;
+   padding-top: 100px;
 }section#about .wrap{
    
    display: flex;
@@ -31,6 +32,7 @@ section#about .educate{
 section#about small{
    font-size: 20px;
    color: #888282;
+   font-weight: 600;
 }
 section#about .educate ul{
 
@@ -46,7 +48,7 @@ section#about .educate ul li:nth-child(3){
 }
 section#about .educate ul li span{
    
-   margin: 0 43px;
+   margin: 0 31px;
 }
 section#about article div ul.list li:nth-child(1)::before{
    content: "";

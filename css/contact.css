@@ -1,64 +1,75 @@
 section#contact {
 
+  padding: 100px 0;
 }
 section#contact .wrap {
 
   display: flex;
-  justify-content: space-around;
 }
-section#contact .wrap .contact-info {
-
+section#contact h3{
+  writing-mode: vertical-rl;
+  text-align: center;
+  transform: rotate(180deg);
+}
+section#contact .wrap .contact-info{
+  margin-left: 50px;
+}
+section#contact .wrap .contact-info h5{
+  
+  font-size: 20px;
+  margin-top: 25px;
 }
 section#contact .wrap .contact-info img {
-
-  width: 400px;
-  border-radius: 20%;
+  width: 450px;
+  border-radius: 10%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-section#contact .wrap .contact-form {
-
+section#contact .wrap .contact-info ul{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
 }
-section#contact .wrap .contact-form ul {
-
-  margin-bottom: 20px;
+section#contact .wrap .contact-info ul li{
+  
 }
-section#contact .wrap .contact-form ul li {
-
-  line-height: 2;
+section#contact .wrap .contact-info ul li a:hover{
+  color: #ffc683;
 }
-section#contact .wrap .contact-form h3 {
-
-  margin-bottom: 20px;
+section#contact .wrap .contact-form{
+  
+  background-color: #cfd4fb;
+  border-radius: 20px;
+  width: 30%;
+  margin-left: 215px;
 }
 section#contact .wrap .contact-form form{
   
 }
 .form-group{
-  margin-bottom: 20px;
+  display: block;
+  margin: 40px 20px;
 }
 label{
-  
-  display: block;
-  margin-bottom: 5px;
+  border-radius: 10px;
+  margin: 0px 20px;
 }
 textarea{
-  
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #4e4d4d;
+  width: 78%;
+  padding: 15px;
   border-radius: 10px;
+  margin: 0 20px;
 }
 button{
-  
   padding: 10px 20px;
   background-color: #f2b3d3;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  margin: 45px 150px;
 }
 input{
-   width: 100%;
+  width: 78%;
   padding: 10px;
-  border: 1px solid #4e4d4d;
   border-radius: 10px;
+  margin: 0px 20px;
 }

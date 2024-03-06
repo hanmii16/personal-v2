@@ -9,6 +9,7 @@
 #skill .wrap h3{
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+  text-align: center;
 }
 #skill .wrap small{
   font-size: 20px;
@@ -25,7 +26,7 @@
 .skill-show{
   
   width: 60%;
-  padding: 50px 80px;
+  padding: 50px 100px;
 }
 .skill-bar{
   background-color: #ddd;
@@ -62,7 +63,7 @@
 .skill-level.html::before{
   content: "80%";
   position: absolute;
-  left: -35px;
+  left: -40px;
 }
 .skill-level.css{
   background-color: #ee7036;
@@ -82,7 +83,7 @@
 .skill-level.css::before{
   content: "80%";
   position: absolute;
-  left: -35px;
+  left: -40px;
 }
 .skill-level.javascript{
   background-color: #f7cb9a;
@@ -102,7 +103,7 @@
 .skill-level.javascript::before{
   content: "60%";
   position: absolute;
-  left: -35px;
+  left: -40px;
 }
 .skill-level.github{
   background-color: #f6c1a7;
@@ -122,7 +123,7 @@
 .skill-level.github::before{
   content: "70%";
   position: absolute;
-  left: -35px;
+  left: -40px;
 }
 .skill-level.photoshop{
   background-color: #b6c796;
@@ -142,7 +143,7 @@
 .skill-level.photoshop::before{
   content: "60%";
   position: absolute;
-  left: -35px;
+  left: -40px;
 }
 .skill-level.illust{
   background-color: #bd9e84;
@@ -162,5 +163,5 @@
 .skill-level.illust::before{
   content: "50%";
   position: absolute;
-  left: -35px;
+  left: -40px;
 }
