@@ -2,6 +2,8 @@ section#about{
    padding-left: 50px;
    padding-right: 50px;
    padding-top: 100px;
+   overflow: hidden;
+   position: relative;
 }section#about .wrap{
    
    display: flex;
@@ -30,8 +32,8 @@ section#about .educate{
    padding-right: 85px;
 }
 section#about small{
-   font-size: 20px;
-   color: #888282;
+   font-size: 22px;
+   color: #e7aaaa;
    font-weight: 600;
 }
 section#about .educate ul{
@@ -98,6 +100,20 @@ section#about article div ul.list li:nth-child(6)::before{
    width: 48px;
    height: 48px;
    background-size: cover;
+}
+section#about .circle{
+   height: 100%;
+   display: block;
+   position: absolute;
+   background-color: rgba(242, 245, 255, 0.8);
+   border-radius: 50%;
+   top: 0;
+   width:  50%;
+   box-shadow: 2px 8px 22px 3px rgba(255, 255, 255, 0.3);
+   z-index: 1;
+   right: -288px;
+   box-sizing: border-box;
+   overflow: hidden;
 }
 .slidingM{
    transform: translateX(-10px);

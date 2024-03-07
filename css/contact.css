@@ -32,6 +32,34 @@ section#contact .wrap .contact-info ul{
 section#contact .wrap .contact-info ul li{
   
 }
+section#contact .wrap .contact-info ul li a{
+  
+  font-size: 0;
+}
+section#contact .wrap .contact-info ul li:nth-child(1) a{
+  background-image: url(../img/facebook.png);
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+section#contact .wrap .contact-info ul li:nth-child(2) a{
+  background-image: url(../img/insta.png);
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+section#contact .wrap .contact-info ul li:nth-child(3) a{
+  background-image: url(../img/kakao.png);
+  width: 50px;
+  height: 50px;
+  display: block
+}
+section#contact .wrap .contact-info ul li:nth-child(4) a{
+  background-image: url(../img/git.png);
+  width: 50px;
+  height: 50px;
+  display: block
+}
 section#contact .wrap .contact-info ul li a:hover{
   color: #ffc683;
 }
@@ -61,7 +89,7 @@ textarea{
 }
 button{
   padding: 10px 20px;
-  background-color: #f2b3d3;
+  background-color: #e7aaaa;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -71,5 +99,5 @@ input{
   width: 78%;
   padding: 10px;
   border-radius: 10px;
-  margin: 0px 20px;
+  margin: 8px 20px;
 }

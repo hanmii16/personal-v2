@@ -1,6 +1,32 @@
-body{
-  
-  background-color: aliceblue;
+body{ 
+  background-color: seashell;
+  overflow-x: hidden;
+}
+body .circle-1{
+   height:1000px;
+   display: block;
+   position: absolute;
+   background-color: rgba(224, 229, 245, 0.3);
+   border-radius: 48%;
+   top: 800px;
+   width: 1000px;
+   box-shadow: 2px 8px 22px 3px rgba(181, 177, 177, 0.3);
+   z-index: 1;
+   right: -300px;
+   box-sizing: border-box;
+}
+body .circle-2{
+   height:1000px;
+   display: block;
+   position: absolute;
+   background-color: rgba(224, 229, 245, 0.3);
+   border-radius: 48%;
+   top: 2500px;
+   width: 1000px;
+   box-shadow: 2px 8px 22px 3px rgba(181, 177, 177, 0.3);
+   z-index: -1;
+   left: -300px;
+   box-sizing: border-box;
 }
 /* 상단영역*/
 header{
@@ -46,7 +72,8 @@ header ul li a{
      letter-spacing: 1px;
      display: block;
      transition: 0.7s;
-     color: #89613b;
+     color: #815d37;
+     text-transform: capitalize;
 }
 header div.wrap>a{
   font-size: 0;
@@ -83,13 +110,15 @@ div#title{
   line-height: 2;
   margin-top: 30px;
   white-space: pre-line;
+  color: #805d37;
+  font-size: 20px;
 }
 #title .wrap .right{
   width: 50%;
 }
 .typed-text-output{
   font-size: 30px;
-    color: #333;
+    color: #e7aaa8;
 }
 #title .wrap .right img{
   width: 400px;
@@ -101,7 +130,7 @@ div#title{
   transform-origin: 0 50%;
   position: relative;
 }
-.current::after{
+/* .current::after{
   content:"";
   display: block;
   position: absolute;
@@ -110,4 +139,4 @@ div#title{
   transition: width .3s,border-width .3s;
   width: 55px;
   border: 1px solid #8e8686;
-}
+} */
