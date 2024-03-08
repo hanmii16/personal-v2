@@ -85,8 +85,8 @@ header div.wrap>a{
   background-repeat: no-repeat;
   display: none;
  }
-div#title{
-  padding: 150px 50px;
+#title{
+  margin: 150px 50px;
 }
 #title div.wrap{
   
