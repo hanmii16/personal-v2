@@ -2,25 +2,28 @@
   /*header*/
   header .wrap{
   width: 100%;
-  padding: 0 15px;
   }
   header h1 a{
-    font-size: calc(30px * 0.5);
+  font-size: calc(15px * 0.8);
   }
   header ul{
-  position: fixed;
-  gap: 0;
-  right: 95px;
+  right: 5px;
+  top: 50px;
   }
   header ul li a{
   font-size: calc(18px * 0.8);
   padding: 0;
   }
-  .sasun::before{
-    display: none;
-  }
   header div.wrap > a{
   position: fixed;
   right: 15px;
   }
+}
+/*title*/
+#title{
+  
+  padding: 0 15px;
+}
+#title .wrap{
+  
 }

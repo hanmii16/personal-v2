@@ -6,7 +6,7 @@ body .circle-1{
    height:1000px;
    display: block;
    position: absolute;
-   background-color: rgba(224, 229, 245, 0.3);
+   background-color: rgba(245, 229, 224, 0.3);
    border-radius: 48%;
    top: 800px;
    width: 1000px;
@@ -19,7 +19,7 @@ body .circle-2{
    height:1000px;
    display: block;
    position: absolute;
-   background-color: rgba(224, 229, 245, 0.3);
+   background-color: rgba(245, 229, 224, 0.3);
    border-radius: 48%;
    top: 2500px;
    width: 1000px;
@@ -61,7 +61,7 @@ header h1 a::before{
 header ul{     
   position: fixed;
   right: 80px;
-  top: 30px;
+  top: 50px;
   z-index: 1;
 }
 header ul li{   

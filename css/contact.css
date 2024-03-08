@@ -65,7 +65,7 @@ section#contact .wrap .contact-info ul li a:hover{
 }
 section#contact .wrap .contact-form{
   
-  background-color: #cfd4fb;
+  background-color: #cfddf5;
   border-radius: 20px;
   width: 30%;
   margin-left: 215px;
@@ -89,7 +89,7 @@ textarea{
 }
 button{
   padding: 10px 20px;
-  background-color: #e7aaaa;
+  background-color: #FED2D6;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
