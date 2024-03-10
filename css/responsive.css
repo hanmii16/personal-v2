@@ -7,18 +7,45 @@
     font-size: calc(15px*0.8);
     }
   header ul{
-    right: 5px;
-    top: 50px;
-    display: none;
+    right: 170px;
+    top: 100px;
+    position: absolute;
+    transiton: 1s;
     }
   header ul li a{
     font-size: calc(18px * 0.8);
-    padding: 0;
+    line-height: 4;
     }
   header div.wrap > a{
-    position: fixed;
-    right: 15px;
+  display: inherit;
+  transform: translateX(100px) translateY(8px);
     }
+  header .wrap .menu{ 
+  background-color: #f4d9cb;
+  height: 100%;
+  top: 0;
+  display: block !important;
+  display: none;
+  right: -80%;
+  transition: 1s;
+  z-index: 1;
+  }
+  .showMenu{
+  right: 0 !important;
+  width: 80% !important;
+  }
+  .close{
+  display: block;
+  }
+  header div.wrap > a .close span:nth-child(1){
+  transform:translateY(10px) rotate(45deg);
+  }
+  header div.wrap > a .close span:nth-child(2){
+  opacity: 0;
+  }
+  header div.wrap > a .close span:nth-child(3){
+  transform:translateY(-10px) rotate(-45deg);
+  }
 /*title*/
    #title{  
   padding: 0 15px;
@@ -97,6 +124,7 @@
   }
   #portfolio h3{
   font-size: calc(200px*0.4);
+  text-align: center;
   }
   #portfolio .wrap ul.portfolio{
     
@@ -109,20 +137,59 @@
   padding: 10px 5px;
   width: 100px;
   height: 50px;
+  z-index: 1;
   }
   #portfolio .wrap ul li h4{
    
   font-size: 18px;
+  text-align: center;
   }
   #portfolio .wrap ul li h5{
   display: none;
   }
   #portfolio .wrap ul li h6{
   font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
   }
   #portfolio .wrap ul li a{
     
   padding: 0px 10px;
-  margin-top: 30px;
+  margin-top: 5px;
+  }
+  #portfolio .wrap ul li .portfolio-image{
+   
+  background-size: 50%;
+  background-position-x: 50px;
+  width: 200px;
+  height: 100px;
+  }
+  .portfolio li.clicked{
+   height: 150px !important;
+  }
+  #portfolio .wrap ul li:nth-child(2n)::before{ 
+  height: 300px;
+  }
+  /*contact*/
+  section#contact{
+  padding: 100px 15px;
+  }
+  section#contact .wrap{
+  width: 100%;
+  }
+  section#contact h3{
+  font-size: calc(200px*0.4);
+  }
+  section#contact .wrap .contact-info img{
+  display: none;
+  }
+  section#contact .wrap .contact-info h5{
+   
+  }
+  section#contact .wrap .contact-info ul{
+    
+  }
+  section#contact .wrap .contact-form{
+   
   }
 }

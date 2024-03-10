@@ -75,16 +75,45 @@ header ul li a{
      color: #815d37;
      text-transform: capitalize;
 }
+header .wrap .menu{
+  position: absolute;
+  transition: 1s;
+}
 header div.wrap>a{
   font-size: 0;
   width: 30px;
   height: 30px;
-  background-image:url(../img/menu.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #caa47b;
   display: none;
  }
+header div.wrap > a span{
+  
+  width: 100%;
+  height: 7px;
+  display: block;
+  background-color: #fff5ee;
+}
+header div.wrap > a span:nth-child(1){
+  transition: 0.5s;
+}
+header div.wrap > a span:nth-child(2){
+  transition: 0.01s;
+}
+header div.wrap > a span:nth-child(3){
+  transition: 0.5s;
+}
+header div.wrap > a.close span:nth-child(1){
+  transform:translateY(10px) rotate(45deg);
+}
+header div.wrap > a.close span:nth-child(2){
+   opacity: 0; 
+}
+header div.wrap > a.close span:nth-child(3){
+  transform:translateY(-10px) rotate(-45deg);
+}
 #title{
   margin: 150px 50px;
 }

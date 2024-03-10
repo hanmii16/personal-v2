@@ -94,7 +94,7 @@
   right: -18px;
 }
 #portfolio .wrap ul li:nth-child(odd):hover::before{
-  background-color: #cfd4fb;
+  background-color: #cfddf5;
 }
 #portfolio .wrap ul li h4{
   margin-bottom: 10px;
