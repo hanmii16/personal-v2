@@ -86,15 +86,14 @@ header div.wrap>a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #caa47b;
   display: none;
  }
 header div.wrap > a span{
   
   width: 100%;
-  height: 7px;
+  height: 3px;
   display: block;
-  background-color: #fff5ee;
+  background-color: #ffc683;
 }
 header div.wrap > a span:nth-child(1){
   transition: 0.5s;
