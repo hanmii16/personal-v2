@@ -122,19 +122,8 @@
            //MENU CLICK
            $("header div.wrap > a").click(function(){
                 $("header .wrap .menu").toggleClass("showMenu");
-
-                // $(".close").remove();
-                // $("header div.wrap > a").hide();
-                
-                // $("header .wrap .menu").prepend('<a href="" class="close block"></a>');
-                // $(".close").click(function(){
-                //     $("header .wrap .menu").removeClass("showMenu");
-                //     // $("header ul").remove();
-                //     $("header div.wrap > a").show();   
-                //     return false;
-                // });
                 $("header div.wrap > a").toggleClass("close");
-                    return false;
+                return false;
            });
         });
      </script>
@@ -194,7 +183,7 @@
         });
       </script>
       <!--타이틀 영상 배경-->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
+      <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
       <style>
         #background {
@@ -205,7 +194,7 @@
         jQuery( function() {
              jQuery( '#background' ).YTPlayer();
                 });
-      </script>
+      </script> -->
 </head>
 <body>
     <div class="circle-1"data-aos="zoom-in-left" data-aos-duration="1500" ></div>
@@ -214,7 +203,7 @@
     <header>
         <div class="wrap">
         <h1><a href="#">welcome to my house:)</a></h1>
-        <div class="menu hide">
+        <div class="menu">
             <ul data-aos="fade-left"data-aos-duration="1500">
                 <li><a href= >about</a></li>
                 <li><a href="">skill</a></li>

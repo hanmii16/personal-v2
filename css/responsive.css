@@ -32,14 +32,13 @@
   height: 100%;
   top: 0;
   display: block !important;
-  display: none;
   right: -80%;
   transition: 1s ease-in-out;
   z-index: 1;
+  width: 80%;
   }
   .showMenu{
   right: 0 !important;
-  width: 80% !important;
   transition: 1s;
   }
   .close{
