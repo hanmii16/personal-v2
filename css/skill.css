@@ -1,5 +1,4 @@
 #skill{
-  height: 700px;
   display: flex;
   align-items: center;
 }
@@ -26,16 +25,17 @@
 .skill-show{
   
   width: 60%;
-  padding: 50px 100px;
+  padding: 50px 80px;
 }
 .skill-bar{
   background-color: #ddd;
   height: 18px;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
 }
 .skill-level{
 
@@ -47,10 +47,10 @@
   padding-left: 22px;
 }
 .skill-level.html{
-  background-color: #9297c8;
+  background-color: #ee7036;
   width: 80%;
   border-radius: 20px;
-  height: 35px;
+  height: 40px;
   animation: fillWidthHtml 2s ease-out forwards; 
 }
 @keyframes fillWidthHtml {
@@ -64,14 +64,25 @@
 .skill-level.html::before{
   content: "80%";
   position: absolute;
-  left: -50px;
   font-weight: 600;
+  top: -22px;
+  left: 12px;
+}
+.skill-level.html::after{
+  content: "";
+  background-image: url(../img/html.png);
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 0;
 }
 .skill-level.css{
-  background-color: #ee7036;
+  background-color: #7cb5df;
   width: 80%;
   border-radius: 20px;
-  height: 35px;
+  height: 40px;
   animation:  fillWidthCss 2s ease-out forwards; 
 }
 @keyframes fillWidthCss {
@@ -85,14 +96,25 @@
 .skill-level.css::before{
   content: "80%";
   position: absolute;
-  left: -50px;
+  top: -22px;
+  left: 12px;
   font-weight: 600;
+}
+.skill-level.css::after{
+  content: "";
+  background-image: url(../img/css.png);
+  width: 50px;
+  height: 49px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 0;
 }
 .skill-level.javascript{
   background-color: #f7cb9a;
   width: 60%;
   border-radius: 20px;
-  height: 35px;
+  height: 40px;
   animation:  fillWidthJava 2s ease-out forwards; 
 }
 @keyframes fillWidthJava {
@@ -106,14 +128,25 @@
 .skill-level.javascript::before{
   content: "60%";
   position: absolute;
-  left: -50px;
+  top: -22px;
+  left: 12px;
   font-weight: 600;
 }
+.skill-level.javascript::after{
+  content: "";
+  background-image: url(../img/js.png);
+  width: 50px;
+  height: 49px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 0;
+}
 .skill-level.github{
-  background-color: #f6c1a7;
+  background-color: #888685;
   width: 70%;
   border-radius: 20px;
-  height: 35px;
+  height: 40px;
   animation:  fillWidthGit 2s ease-out forwards; 
 }
 @keyframes fillWidthGit {
@@ -127,14 +160,25 @@
 .skill-level.github::before{
   content: "70%";
   position: absolute;
-  left: -50px;
+  top: -22px;
+  left: 12px;
   font-weight: 600;
 }
+.skill-level.github::after{
+  content: "";
+  background-image: url(../img/githublogo.png);
+  width: 50px;
+  height: 49px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 0;
+}
 .skill-level.photoshop{
-  background-color: #b6c796;
+  background-color: #96c7c0;
   width: 60%;
   border-radius: 20px;
-  height: 35px;
+  height: 40px;
   animation:  fillWidthPTS 2s ease-out forwards; 
 }
 @keyframes fillWidthPTS {
@@ -148,15 +192,25 @@
 .skill-level.photoshop::before{
   content: "60%";
   position: absolute;
-  left: -50px;
+  top: -22px;
+  left: 12px;
   font-weight: 600;
 }
-
+.skill-level.photoshop::after{
+  content: "";
+  background-image: url(../img/ps.png);
+  width: 50px;
+  height: 49px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 0;
+}
 .skill-level.illust{
-  background-color: #bd9e84;
+  background-color: #ffba61;
   width: 50%;
   border-radius: 20px;
-  height: 35px;
+  height: 40px;
   animation:  fillWidthIllust 2s ease-out forwards; 
 }
 @keyframes fillWidthIllust {
@@ -170,7 +224,147 @@
 .skill-level.illust::before{
   content: "50%";
   position: absolute;
-  left: -50px;
+  top: -22px;
+  left: 12px;
   font-weight: 600;
 }
+.skill-level.illust::after{
+  content: "";
+  background-image: url(../img/ai.png);
+  width: 50px;
+  height: 49px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 0;
+}
+.skill-level.premiere{
+  background-color: #a384bd;
+  width: 40%;
+  border-radius: 20px;
+  height: 40px;
+  animation:  fillWidthPremiere 2s ease-out forwards; 
+}
+@keyframes fillWidthPremiere {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 40%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.premiere::before{
+  content: "40%";
+  position: absolute;
+  top: -22px;
+  left: 12px;
+  font-weight: 600;
+}
+.skill-level.premiere::after{
+  content: "";
+  background-image: url(../img/pr.png);
+  width: 50px;
+  height: 49px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 0;
+}
+.skill-level.zencoding{
+  background-color: #cad38c;
+  width: 70%;
+  border-radius: 20px;
+  height: 40px;
+  animation:  fillWidthZencoding 2s ease-out forwards; 
+}
+@keyframes fillWidthZencoding {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 70%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.zencoding::before{
+  content: "70%";
+  position: absolute;
+  top: -22px;
+  left: 12px;
+  font-weight: 600;
+}
+.skill-level.zencoding::after{
+  content: "";
+  background-image: url(../img/jen.png);
+  width: 50px;
+  height: 49px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 0;
+  background-repeat: no-repeat;
+}
+.skill-level.kakao{
+  background-color: #96d2ea;
+  width: 80%;
+  border-radius: 20px;
+  height: 40px;
+  animation:  fillWidthKakao 2s ease-out forwards; 
+}
+@keyframes  fillWidthKakao {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 80%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.kakao::before{
+  content: "80%";
+  position: absolute;
+  top: -22px;
+  left: 12px;
+  font-weight: 600;
+}
+.skill-level.kakao::after{
+  content: "";
+  background-image: url(../img/ov.png);
+  width: 50px;
+  height: 49px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 0;
+}
+.skill-level.vue{
+  background-color: #87c68b;
+  width: 30%;
+  border-radius: 20px;
+  height: 40px;
+  animation:  fillWidthVue 2s ease-out forwards; 
+}
+@keyframes  fillWidthVue {
+    0% {
+        width: 0; /* Bắt đầu với độ dài là 0 */
+    }
+    100% {
+        width: 30%; /* Kết thúc với độ dài là 90% */
+    }
+}
+.skill-level.vue::before{
+  content: "30%";
+  position: absolute;
+  top: -22px;
+  left: 12px;
+  font-weight: 600;
+}
+.skill-level.vue::after{
+  content: "";
+  background-image: url(../img/vue.png);
+  width: 50px;
+  height: 49px;
+  background-size: contain;
+  position: absolute;
+  left: -55px;
+  top: 6px;
+  background-repeat: no-repeat;
 }

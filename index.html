@@ -37,11 +37,6 @@
      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
      <script type="text/javascript">
         $(document).ready(function(){
-           
-             // PORTFOLIO IMAGE CLICK
-             $("#portfolio .wrap ul li").click(function(){
-                $(this).toggleClass("clicked");
-             });   
             //SCROLL CLICK
             $("aside .scroll span a").click(function(){
                 $("html,body").animate({scrollTop:0},1000);
@@ -119,12 +114,21 @@
                 cursorChar: '|',
                 loop: true
             });
+            //PORTFOLIO IMAGE HOVER
+            $("#portfolio .wrap ul li").mouseenter(function(){
+                $(this).find("figcaption").addClass("scaleX");
+            });
+
+            $("#portfolio .wrap ul li").mouseleave(function(){
+                $(this).find("figcaption").removeClass("scaleX");
+            });
            //MENU CLICK
            $("header div.wrap > a").click(function(){
                 $("header .wrap .menu").toggleClass("showMenu");
                 $("header div.wrap > a").toggleClass("close");
                 return false;
            });
+          
         });
      </script>
        <!-- MOUSEWHEELL
@@ -183,7 +187,7 @@
         });
       </script>
       <!--타이틀 영상 배경-->
-      <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/css/jquery.mb.YTPlayer.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.4/jquery.mb.YTPlayer.min.js"></script>
       <style>
         #background {
@@ -194,15 +198,17 @@
         jQuery( function() {
              jQuery( '#background' ).YTPlayer();
                 });
-      </script> -->
+      </script>
 </head>
 <body>
-    <div class="circle-1"data-aos="zoom-in-left" data-aos-duration="1500" ></div>
-    <div class="circle-2"data-aos="zoom-in-left" data-aos-duration="2000" ></div>
+    <!-- <div class="circle-1"data-aos="zoom-in-left" data-aos-duration="1500" ></div>
+    <div class="circle-2"data-aos="zoom-in-left" data-aos-duration="2000" ></div> -->
     <!--상단영역-->
     <header>
         <div class="wrap">
-        <h1><a href="#">welcome to my house:)</a></h1>
+        <h1>
+            <a href="#">Yoon Hanmi</a>
+        </h1>
         <div class="menu">
             <ul data-aos="fade-left"data-aos-duration="1500">
                 <li><a href= >about</a></li>
@@ -222,48 +228,51 @@
     <div id="title">
         <div class="wrap flex column align-center center">
             <div class="left">
-                <h2 class="h1"data-aos="fade-right"data-aos-duration="1500">Hi
+                <h2 class="h1"data-aos="fade-right"data-aos-duration="1500">WELCOME TO MY
                     <br>
-                    <strong>I'm Hanmi</strong></h2>
+                    <strong><span>PORT</span><span>FOLIO</span></strong></h2>
                     <span id="typing-effect" class="typed-text-output"></span> 
                     <p data-aos="fade-up"data-aos-delay="800">안녕하세요! 베트남에서 온 웹퍼블리셔 응우엔당빅하인입니다.
-                        나의 꿈은 웹을 통해 세상을 더 아름답게 만드는 것입니다."
+                        나의 꿈은 웹을 통해 세상을 더 아름답게 만드는 것입니다.
                      </p> 
             </div>
             <div class="right"data-aos-duration="1500">
-                <img src="img/IMG_5587.PNG"data-aos="fade-left"data-aos-duration="1500" alt="">
+                <img src="img/girl.png"data-aos="fade-left"data-aos-duration="1500" alt="">
             </div>
+            <div class="image"></div>
         </div> 
+        <!-- <div id="background" class="player" data-property="{
+            videoURL: 'https://youtu.be/kJeuRcFO3VE',
+            mute: true,
+            showControls: false,
+            useOnMobile: true,
+            quality: 'highres',
+            containment: 'body',
+            loop: true,
+            autoPlay: true,
+            stopMovieOnBlur: false,
+            startAt: 0,
+            opacity: 1
+          }">
+          </div> -->
     </div>
-    <div id="background" class="player" data-property="{
-        videoURL: 'https://youtu.be/GQtq2kW0SpM',
-        mute: true,
-        showControls: false,
-        useOnMobile: true,
-        quality: 'highres',
-        containment: 'body',
-        loop: true,
-        autoPlay: true,
-        stopMovieOnBlur: false,
-        startAt: 0,
-        opacity: 1
-      }">
-      </div>
+    
     <!--메인영역-->
     <main>
         <section id="about" class="paddingT50 paddingB50">
             <div class="wrap">
                 <h3 class="h3">About</h3> 
+                
             <div class="infor" data-aos="fade-right"data-aos-duration="1500">
                 <small class="small">MY . INFORMATION</small>
                 <ul>
-                    <li><strong>NAME</strong>
+                    <li><strong>Name</strong>
                         NGUYEN DANG BICH HANH</li>
-                    <li><strong>BIRTHDAY</strong>
+                    <li><strong>Bithday</strong>
                         1997.01.16</li>
-                    <li><strong>ADDRESS</strong>
+                    <li><strong>Address</strong>
                         Seongnamsi</li>
-                    <li><strong>HOBBY</strong>
+                    <li><strong>Hobby</strong>
                         Drawing,Travel</li>
                 </ul>
             </div>
@@ -281,14 +290,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="intro">
+                <p>"그림을 좋아하여 처음엔 웹디자인을 고민하였습니다. 
+                    그림을 온라인으로 공유하고 싶은 마음이 커 조금씩 배워보다가 학원을 다니면서 웹디자인을 알게 되고 코딩을 배우면서 점차 흥미가 웹 퍼블리셔로 기울게 되었습니다. 
+                    베트남 출신인 저에게 한국에서의 생활은 많은 도전과 기회를 제공했습니다. 새로운 문화와 언어에 적응하면서, 다양한 배경을 가진 사람들과의 소통 방법을 배웠습니다. 
+                    덕분에 제가 디자인을 할 때도 다양한 사용자의 요구와 기대를 고려하는 데 큰 도움이 되었습니다."
+                </p>
+                <span></span>
             </div>
-        
+            </div>
         </section>
         
         <section id="skill"class="paddingT50 paddingB50">
             <div class="wrap">
-                <h3 class="h3">Skill</h3>
-               
+                <h3 class="h3">Skill</h3>  
                 <div class="skill-show">
                     <div class="skill">
                         <h4>HTML5</h4>
@@ -315,7 +330,7 @@
                             </div>
                     </div>
                     <div class="skill">
-                            <h4>Adobe hotoshop</h4>
+                            <h4>Adobe Photoshop</h4>
                             <div class="skill-bar">
                                 <div class="skill-level photoshop">Adobe Photoshop</div>
                             </div>
@@ -325,85 +340,140 @@
                         <div class="skill-bar">
                             <div class="skill-level illust">Adobe Illustrator</div>
                         </div>
-                 </div>
-            </div>               
+                    </div>
+                    <div class="skill">
+                        <h4>Adobe Premiere</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level premiere">Adobe Premiere</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Zen Coding</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level zencoding">Zen Coding</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Kakao Oven</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level kakao">Kakao Oven</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Vue</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level vue">Vue</div>
+                        </div>
+                    </div>
+            </div> 
+             
         </section>
         <section id="portfolio" class="paddingT50 paddingB50">
             <div class="wrap">
                 <h3 class="h3">Portfolio</h3>
                 <ul class="portfolio">   
                     <li data-aos="fade-up"data-aos-duration="1500"data-aos-delay="300">
-                        <h4 class="h4">ACCUNIQ</h4>
-                        <h5 class="h5">작업진도: 100%</h5>
-                        <h6 class="h6">사용도구: html,css,jquery</h6>
-                        <a href="pf1-accuniq/index.html">View more</a>
-                        <div class="portfolio-image"></div>
+                        <h4 class="h4">Accuniq</h4>
+                        <figure>
+                            <img src="img/work1.png" alt="">
+                            <figcaption>
+                                작업진도: 90%
+                                사용도구: html,css,jquery
+                                <a href="">View more</a>
+                            </figcaption>
+                        </figure>
                     </li>
                     <li data-aos="fade-up"data-aos-duration="1500"data-aos-delay="500">
-                        <h4 class="h4">L.POINT</h4>
-                        <h5 class="h5">작업진도: 100%</h5>
-                        <h6 class="h6">사용도구: html,css,jquery</h6>
-                        <a href="pf2-lpoint/index.html">View more</a>
-                        <div class="portfolio-image"></div>
+                            <h4 class="h4">L.point</h4>
+                            <figure>
+                                <img src="img/work2.png" alt="">
+                                <figcaption>
+                                    작업진도: 90%
+                                    사용도구: html,css,jquery
+                                    <a href="">View more</a>
+                                </figcaption>
+                            </figure>
                     </li>
                     <li data-aos="fade-up"data-aos-duration="1500"data-aos-delay="700"> 
-                        <h4 class="h4">HB PAPER</h4>
-                        <h5 class="h5">작업진도: 100%</h5>
-                        <h6 class="h6">사용도구: html,css,jquery</h6>
-                        <a href="pf3-hbpaper/index.html">View more</a>
-                        <div class="portfolio-image"></div>
+                            <h4 class="h4">HB Paper</h4>
+                            <figure>
+                                <img src="img/work3.png" alt="">
+                                <figcaption>
+                                    작업진도: 90%
+                                    사용도구: html,css,jquery
+                                    <a href="">View more</a>
+                                </figcaption>
+                            </figure>
                     </li>
                     <li data-aos="fade-up"data-aos-duration="1500"data-aos-delay="900">
-                        <h4 class="h4">HITENJINRO</h4>
-                        <h5 class="h5">작업진도: 100%</h5>
-                        <h6 class="h6">사용도구: html,css,jquery</h6>
-                        <a href="pf4-Hitejinro/index.html">View more</a>
-                        <div class="portfolio-image"></div>
+                            <h4 class="h4">Hitenjinro</h4>
+                            <figure>
+                                <img src="img/work4.PNG" alt="">
+                                <figcaption>
+                                    작업진도: 90%
+                                    사용도구: html,css,jquery
+                                    <a href="">View more</a>
+                                </figcaption>
+                            </figure>
                     </li>
                     <li data-aos="fade-up"data-aos-duration="1500"data-aos-delay="1100">
-                        <h4 class="h4">THE HUE</h4>
-                        <h5 class="h5">작업진도: 100%</h5>
-                        <h6 class="h6">사용도구: html,css,jquery</h6>
-                        <a href="thehue/index.html">View more</a>
-                        <div class="portfolio-image"></div>
+                            <h4 class="h4">The hue</h4>
+                            <figure>
+                                <img src="img/work6.PNG" alt="">
+                                <figcaption>
+                                    작업진도: 90%
+                                    사용도구: html,css,jquery
+                                    <a href="">View more</a>
+                                </figcaption>
+                            </figure>
                     </li>
                     <li data-aos="fade-up"data-aos-duration="1500"data-aos-delay="1300">
-                        <h4 class="h4">SANRIO</h4>
-                        <h5 class="h5">작업진도: 100%</h5>
-                        <h6 class="h6">사용도구: html,css,jquery</h6>
-                        <a href="sanrio/index.html">View more</a>
-                        <div class="portfolio-image"></div>
+                            <h4 class="h4">Sanrio</h4>
+                            <figure>
+                                <img src="img/work7.PNG" alt="">
+                                <figcaption>
+                                    작업진도: 90%
+                                    사용도구: html,css,jquery
+                                    <a href="">View more</a>
+                                </figcaption>
+                            </figure>
                     </li>
                     <li data-aos="fade-up"data-aos-duration="1500"data-aos-delay="1500">
-                        <h4 class="h4">BAEXANG GALLERY</h4>
-                        <h5 class="h5">작업진도: 100%</h5>
-                        <h6 class="h6">사용도구: html,css,jquery</h6>
-                        <a href="baexang%20gallery/index.html">View more</a>
-                        <div class="portfolio-image"></div>
+                            <h4 class="h4">Baexang gallery</h4>
+                            <figure>
+                                <img src="img/work8.png" alt="">
+                                <figcaption>
+                                    작업진도: 90%
+                                    사용도구: html,css,jquery
+                                    <a href="">View more</a>
+                                </figcaption>
+                            </figure>
                     </li>
                 </ul>
             </div>
         </section>
         <section id="contact" class="paddingT50 paddingB50">
+            <h3 class="h3">IF YOU HAVE ANY QUESTION CONTACT WITH ME</h3>
             <div class="wrap">
-                <h3 class="h3"data-aos="fade-up">Contact</h3>
                 <div class="contact-info">
-                    <img src="img/IMG_5429.jpg" data-aos="fade-right"data-aos-duration="1500" alt="Contact Image">
-                    <h5 data-aos="flip-up">If you have any question, contact with me</h5>
-                    <ul class="sns"data-aos="flip-up"data-aos-duration="1500" >
-                        <li>
-                            <a href="https://www.facebook.com/hanmi0116/">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/h.ymieong/">Instagram</a>
-                        </li>
-                        <li>
-                           <a href="">Kakaotalk</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/hanmii16">Github</a>
-                        </li>
-                    </ul>
+                    <div class="connect">
+                        <h5 class="h5">Connect</h5>
+                        <a href="">hanhmit161@naver.com</a>
+                    </div>
+                    <div class="follow">
+                        <h5 class="h5">Follow</h5>
+                        <ul class="sns" >
+                            <li>
+                                <a href="https://www.facebook.com/hanmi0116/">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/h.ymieong/">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/hanmii16">Github</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="contact-form"data-aos="fade-left"data-aos-duration="1500">
                     <form action="#" method="post">
@@ -421,6 +491,7 @@
                         </div>
                         <button type="submit">Send Message</button>
                     </form>
+                 </div>
             </div>
         </section>
     </main>
@@ -434,7 +505,7 @@
     </aside>
     <!--하단영역-->
     <footer>
-        <div class="wrap flex between paddingT50 marginT50">
+        <div class="wrap flex between">
            <p>©2024 <span>Yoon Han Mi. All rights reserved</span></p>
         </div>
     </footer>
