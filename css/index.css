@@ -151,7 +151,12 @@ header div.wrap > a.close span:nth-child(3){
   line-height: 1.7;
   font-family: "Lilita One", sans-serif;
   color: #fff;
+  animation: slide-up 0.8s cubic-bezier(0.45,0.64,0.12,1) 1 both;
 }
+   @keyframes slide-up {
+    0% {transform: translateY(100%)}
+    100%  {transform: translateY(0)}
+  }
 #title .wrap h2 strong{
   color: #aadbff;
 }
@@ -172,6 +177,7 @@ header div.wrap > a.close span:nth-child(3){
   position: absolute;
   left: 450px;
   left: 420px;
+  animation: slide-up 1s cubic-bezier(0.45,0.64,0.12,1) 0.8s both;
 }
 #title .wrap .right img{
  
