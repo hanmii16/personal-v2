@@ -1,4 +1,8 @@
 @media screen and (max-width:768px){
+  body{
+    
+  /*! overflow-y: hidden; */
+  }
   header{
   padding: 15px 0;
   height: 80px;
@@ -60,16 +64,98 @@
   right: 25px;
   }
   section#about{
-  padding: 40px 15px;
+  padding: 80px 15px;
   }
   section#about .wrap{
   width: 100%;
+  }
+  section#about .wrap h3{
+  writing-mode: inherit;
+  transform: initial;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
   .h3{
   font-size: calc(150px * 0.5);
   }
-  section#about .wrap .infor{
-    
+  section#about .wrap .infor{  
   padding: 30px 22px;
+  }
+  section#about .wrap .intro{
+  padding: 50px 20px;
+  transform: translateX(12%) translateY(0%);
+  margin-top: 35px;
+  border-radius: 35px;
+  }
+  section#about .wrap .intro img{
+    
+  width: 132px;
+  height: 202px;
+  }
+  section#about .educate{
+    
+  line-height: 2.5;
+  margin: 0;
+  margin-top: 35px;
+  padding: 15px 15px;
+  }
+  section#about .educate ul li{ 
+  line-height: 2;
+  }
+  section#about .wrap .intro span{
+    
+  width: 25px;
+  height: 25px;
+  }
+  #skill .wrap{
+  flex-direction: column;
+  }
+  #skill .wrap h3{
+   writing-mode: inherit;
+  transform: initial;
+  }
+  .skill-bar{
+  font-size: 12px;
+  }
+  .skill-show{
+    
+  padding: 50px 120px;
+  }
+  #portfolio .wrap{
+    
+  width: 100%;
+  flex-direction: column;
+  }
+  #portfolio .wrap ul{
+    
+  gap: 18px;
+  }
+  #portfolio .wrap ul li{
+  width: 212px;
+  height: 160px;
+  }
+  #portfolio .wrap ul li h4{
+    
+  font-size: 20px;
+  }
+  #portfolio .wrap h3{
+  writing-mode: inherit;
+  transform: initial; 
+  margin-bottom: 25px;
+  }
+  #portfolio .wrap ul li figure figcaption{
+  font-size: calc(20px * 0.7);
+}
+  section#contact .wrap{
+  width: 100%;
+  padding: 15px 0px;
+  }
+  section#contact .wrap .contact-form{
+  display: none;
+  }
+  footer .wrap{
+    
+  width: 100%;
   }
 }
