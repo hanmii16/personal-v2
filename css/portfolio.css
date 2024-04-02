@@ -23,10 +23,10 @@
   width: 450px;
   height: 340px;
   border-radius: 25px;
-  box-shadow: 8px 8px 0px #a4a09c;
+  box-shadow: 8px 8px 0px #f7efea;
   position: relative;
   cursor: pointer;
-  /*! background-color: #fff9ed; */
+  background-color: #fff;
 }
 #portfolio .wrap ul li:nth-child(7){
   
@@ -36,7 +36,6 @@
   
   text-align: center;
   margin-bottom: 25px;
-  color: #e7aaa8;
 }
 #portfolio .wrap ul li figure{
   
@@ -76,7 +75,7 @@
 }
 #portfolio .wrap ul li figure figcaption.scaleX{
   opacity: 1;
-  background-color: #d2dfe5;
+  background-color: #ffcdcf;
   border-radius: 20px;
   transform: scaleX(1) !important;
 }

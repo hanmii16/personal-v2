@@ -1,226 +1,75 @@
 @media screen and (max-width:768px){
-  body .circle-2{overflow: hidden;height: 100vw;z-index: 1;}
-  
-  /*header*/
- header .wrap{
-  width: 100%;
-  justify-content: flex-start;
-  }
-  header h1{
+  header{
+  padding: 15px 0;
+  height: 80px;
+}
+  header .wrap{
     
-  margin-left: 50px;
+  width: 100%;
+  margin: 0 auto;
+  /*! padding: 0 15px; */
+  justify-content: space-around;
+  border-radius: 25px;
   }
   header h1 a{
-    font-size: calc(15px*0.8);
-    }
-  header ul{
-    right: 170px;
-    top: 100px;
-    position: absolute;
-    }
+    
+  font-size: 10px;
+  white-space: nowrap;
+  }
+  header h1 a::before{
+  display: none;
+  }
   header ul li a{
-    font-size: calc(18px * 0.8);
-    line-height: 4;
-    }
-  header div.wrap > a{
-  display: inherit;
-  transform: translateX(100px) translateY(6px);
-  z-index: 1;
-    }
-  header .wrap .menu{ 
-  background-color: #f4d9cb;
-  height: 100%;
-  top: 0;
-  display: block !important;
-  right: -80%;
-  transition: 1s ease-in-out;
-  z-index: 1;
-  width: 80%;
+  font-size: calc(22px * 0.5);
+  padding: 15px 20px;
   }
-  .showMenu{
-  right: 0 !important;
-  transition: 1s;
+  #title{
+  font-size: calc(165px * 0.4);
+  line-height: 1.2;
+  margin: 50px 15px;
   }
-  .close{
-  display: block;
+  #title div.wrap{   
+  width: 100%;
   }
-  header div.wrap > a .close span:nth-child(1){
-  transform:translateY(10px) rotate(45deg);
+  #title .wrap h2{
+  font-size: 57px;
+  line-height: 1.5;
   }
-  header div.wrap > a .close span:nth-child(2){
-  opacity: 0;
-  }
-  header div.wrap > a .close span:nth-child(3){
-  transform:translateY(-10px) rotate(-45deg);
-  }
-  header div.wrap > a span:nth-child(1){
-  transition: 0.5s;
-  }
-  header div.wrap > a span:nth-child(2){
-    transition: 0.01s;
-  }
-  header div.wrap > a span:nth-child(3){
-    transition: 0.5s;
-  }
-  header div.wrap > a.close span:nth-child(1){
-    transform:translateY(10px) rotate(45deg);
-  }
-  header div.wrap > a.close span:nth-child(2){
-     opacity: 0; 
-  }
-  header div.wrap > a.close span:nth-child(3){
-    transform:translateY(-10px) rotate(-45deg);
-  }
-/*title*/
-   #title{  
-  padding: 0 15px;
-  margin: 150px 0;
-   }
-  #title .wrap{
-    width: 100%;
-  }
-  #title .left h2{
-    font-size: calc(135px*0.3);
+  #title .wrap h2 strong span:first-child{ 
+  margin-right: 115px;
   }
   .typed-text-output{
-    font-size: calc(30px*0.5);
+  font-size: calc(50px * 0.5);
   }
-  #title .wrap .left p{
-    font-size: calc(20px*0.5);
-    margin-top: 20px;
-    white-space: inherit;
+  #title .wrap .left p{ 
+  font-size: calc(20px * 0.7);
+  }
+  #title .wrap .right{ 
+  left: 120px;
+  bottom: 145px;
   }
   #title .wrap .right img{
-    width: 180px;
-    height: 250px;
+    
+  width: 150px;
+  height: 150px;
   }
-/*about*/
- section#about{
-  padding: 0 15px;
+  #title .wrap .image{
+    
+  width: 28px;
+  bottom: 112px;
+  right: 25px;
+  }
+  section#about{
+  padding: 40px 15px;
   }
   section#about .wrap{
   width: 100%;
+}
+  .h3{
+  font-size: calc(150px * 0.5);
   }
-  section#about .wrap h3{
-  font-size: calc(200px*0.4);
-  text-align: center;
-  }  
   section#about .wrap .infor{
-  padding-left: 0;
-} 
-  section#about small{
     
-  font-size: calc(22px*0.6);
+  padding: 30px 22px;
   }
-  section#about .wrap .infor ul li{
-    
-  line-height: 2.5;
-  font-size: 15px;
-  }
-  section#about .educate{
-  padding-right: 0;
-  }
-  section#about .educate ul li{
-    
-  line-height: 2.5;
-  font-size: 15px;
-  }
-  section#about .educate ul li span{
-    
-  margin: 0 10px;
-  }
-  /*skill*/
-  #skill{
-  padding: 0 15px;  
-  }
-  #skill .wrap h3{
-    
-  font-size: calc(200px*0.4);
-  }
-  .skill-show{
-  padding: 20px 50px;
-  }
-  /*portfolio*/
-  #portfolio{ 
-  padding: 0 15px;
-  }
-  #portfolio .wrap{
-  width: 100%;
-  }
-  #portfolio h3{
-  font-size: calc(200px*0.4);
-  text-align: center;
-  }
-  #portfolio .wrap ul.portfolio{
-    
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(7,1fr);
-  padding: 0px 15px;
-  }
-  #portfolio .wrap ul li{
-    
-  padding: 10px 5px;
-  width: 100px;
-  height: 50px;
-  z-index: 1;
-  }
-  #portfolio .wrap ul li h4{
-   
-  font-size: 18px;
-  text-align: center;
-  }
-  #portfolio .wrap ul li h5{
-  display: none;
-  }
-  #portfolio .wrap ul li h6{
-  font-size: 15px;
-  text-align: center;
-  margin-top: 10px;
-  }
-  #portfolio .wrap ul li a{
-    
-  padding: 0px 10px;
-  margin-top: 5px;
-  }
-  #portfolio .wrap ul li .portfolio-image{
-   
-  background-size: 50%;
-  background-position-x: 50px;
-  width: 200px;
-  height: 100px;
-  }
-  .portfolio li.clicked{
-   height: 150px !important;
-  }
-  #portfolio .wrap ul li:nth-child(2n)::before{ 
-  height: 300px;
-  }
-  /*contact*/
-  section#contact{
-  padding: 100px 15px;
-  }
-  section#contact .wrap{
-  width: 100%;
-  }
-  section#contact h3{
-  font-size: calc(200px*0.4);
-  }
-  section#contact .wrap .contact-info{margin-left: 20px;margin-top: 20px;}
-  
-  section#contact .wrap .contact-info img{
-  width: 200px;
-  }
-  section#contact .wrap .contact-form{  
-  display: none;
-}
-  /*footer*/
-  footer .wrap{ 
-  width: 100%;
-}
-  aside .scroll span a{
-    
-  z-index: 1;
-  }
-  
-  
 }

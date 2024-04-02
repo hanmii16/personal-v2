@@ -8,19 +8,21 @@ section#contact .wrap {
   display: flex;
   padding: 50px 0px;
   justify-content: space-around;
-  background: linear-gradient(180deg,#fffbf8 0%,rgb(242, 238, 230) 100%);
+  background: linear-gradient(180deg,#f9f3ec 0%,rgb(193, 206, 230) 100%);
   border-radius: 35px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px -3px 0px 0px inset, rgb(255, 255, 255) 0px 0px 0px 2px inset, rgba(0, 0, 0, 0.06) 0px 4px 2px 0px inset, rgba(0, 0, 0, 0.04) 0px 0px 24px 4px inset, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
   backdrop-filter: blur(48px);
   border: 1px solid rgba(0,0,0,0.1);
   margin-top: 80px;
+  max-width: 1200px;
 }
 section#contact h3{
   white-space: nowrap;
   animation: runText linear infinite 50s;
   position: absolute;
   top: 0;
-  margin-top: 55px;
+  margin-top: 25px;
+  font-family: "Lilita One", sans-serif;
 }
 @keyframes runText {
     0% { left: 100%; } /* Di chuyển chữ về bên phải màn hình */
@@ -29,9 +31,13 @@ section#contact h3{
 section#contact .wrap .contact-info{
   width: 50%;
  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section#contact .wrap .contact-info .connect{
   
+  line-height: 7;
 }
 section#contact .wrap .contact-info .connect h5{
   
@@ -40,6 +46,9 @@ section#contact .wrap .contact-info .connect h5{
 }
 section#contact .wrap .contact-info .connect a{
   
+}
+section#contact .wrap .contact-info .connect a:hover{
+  text-decoration: underline;
 }
 section#contact .wrap .contact-info .follow{
   
@@ -50,7 +59,7 @@ section#contact .wrap .contact-info .follow h5{
 section#contact .wrap .contact-info .follow ul{
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 section#contact .wrap .contact-info ul li{
   
@@ -72,10 +81,10 @@ section#contact .wrap .contact-info ul li:nth-child(2) a{
   display: block;
 }
 section#contact .wrap .contact-info ul li:nth-child(3) a{
-  background-image: url(../img/kakao.png);
+  background-image: url(../img/github.png);
   width: 50px;
   height: 50px;
-  display: block
+  display: block;
 }
 section#contact .wrap .contact-info ul li:nth-child(4) a{
   background-image: url(../img/git.png);
@@ -114,6 +123,9 @@ button{
   border-radius: 5px;
   cursor: pointer;
   margin: 45px 150px;
+}
+button:hover{
+  color: black;
 }
 input{
   width: 78%;

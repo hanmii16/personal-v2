@@ -1,32 +1,7 @@
 body{ 
   overflow-x: hidden;
+  /*! background-image: url(../img/grid_2.jpg); */
 }
-/* body .circle-1{
-   height:1000px;
-   display: block;
-   position: absolute;
-   background-color: rgba(245, 229, 224, 0.3);
-   border-radius: 48%;
-   top: 800px;
-   width: 1000px;
-   box-shadow: 2px 8px 22px 3px rgba(181, 177, 177, 0.3);
-   z-index: 1;
-   right: -300px;
-   box-sizing: border-box;
-}
-body .circle-2{
-   height:1000px;
-   display: block;
-   position: absolute;
-   background-color: rgba(245, 229, 224, 0.3);
-   border-radius: 48%;
-   top: 2500px;
-   width: 1000px;
-   box-shadow: 2px 8px 22px 3px rgba(181, 177, 177, 0.3);
-   z-index: -1;
-   left: -300px;
-   box-sizing: border-box;
-} */
 /* 상단영역*/
 header{
   height: 120px;
@@ -53,7 +28,11 @@ header h1 a{
    font-weight: bold; 
    display: flex;
    align-items: center;
+   color: #fff;
  }
+header h1 a:hover{
+  color: #ffcdcf;
+}
 header h1 a::before{
   content: "";
   background-image: url(../img/IMG_5594.png);
@@ -81,10 +60,11 @@ header ul li a{
      transition: 0.7s;
      text-transform: capitalize;
      padding: 18px 30px;
+     color: #fff;
 }
 header ul li:nth-child(1) a{
   
-  background-color: #eaeaea;
+  background-color: #ffd9ae;
   border-radius: 25px;
 }
 header ul li:nth-child(1) a:hover{
@@ -169,10 +149,11 @@ header div.wrap > a.close span:nth-child(3){
 #title .wrap h2{
   font-size: 165px;
   line-height: 1.7;
-  font-family: 'Chalkboard', cursive;
+  font-family: "Lilita One", sans-serif;
+  color: #fff;
 }
 #title .wrap h2 strong{
-  color: #ffc683;
+  color: #aadbff;
 }
 #title .wrap h2 strong span:first-child{
   
@@ -184,6 +165,7 @@ header div.wrap > a.close span:nth-child(3){
   margin-top: 30px;
   white-space: pre-line;
   font-size: 20px;
+  color: #fff;
 }
 #title .wrap .right{
   width: 40%;
@@ -208,7 +190,8 @@ header div.wrap > a.close span:nth-child(3){
 }
 .typed-text-output{
   font-size: 50px;
-    color: #e7aaa8;
+    color: #ffcdcf;
+  font-weight: bold;
 }
 
 .current{
